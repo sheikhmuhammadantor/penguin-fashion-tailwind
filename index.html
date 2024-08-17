@@ -5,14 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
+    <link rel="shortcut icon" href="./icons/penguins.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .font-bebas {
+            font-family: "Bebas Neue", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-roboto">
 
+    <!-- Header Section -->
     <header class="w-full">
         <nav class="max-w-7xl mx-auto px-5 flex justify-between items-center my-7">
             <div class="md:w-1/2">
@@ -21,15 +37,38 @@
             <div>
                 <i class="fa-solid fa-bars md:hidden ml-3 cursor-pointer text-lg"></i>
                 <ul class="md:flex gap-6 text-xl font-medium hidden">
-                    <li class="hover:underline"><a href="#">Home</a></li>
-                    <li class="hover:underline"><a href="#">Product</a></li>
-                    <li class="hover:underline"><a href="#">About us</a></li>
-                    <li class="hover:underline"><a href="#">Contact</a></li>
+                    <li class="hover:underline text-[#3C3C3C]">
+                        <a class="text-[#3C3C3C]" href="#">Home</a></li>
+                    <li class="hover:underline">
+                        <a class="text-[#3C3C3C]" href="#">Product</a></li>
+                    <li class="hover:underline">
+                        <a class="text-[#3C3C3C]" href="#">About us</a></li>
+                    <li class="hover:underline">
+                        <a class="text-[#3C3C3C]" href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-5 flex md:flex-row flex-col justify-between items-center">
+        <div class="flex flex-col gap-5 max-w-xl">
+            <h1 class="text-7xl font-normal font-bebas">
+                <p class="text-[#FABE4C]">Be The Penguins</p>
+                <p class="text-[#363958]">Of Winter</p>
+            </h1>
+            <p class="text-[#3E3E3E] text-lg leading-6">
+                The silk is then carefully spun into threads and woven into the finest cloth.
+            </p>
+            <button class="w-44 bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-xl py-4 flex justify-center gap-2 rounded-lg text-white">
+                <img class="w-8 " src="./icons/shopping-cart.png" alt="#">
+                Buy Now
+            </button>
+        </div>
+        <div class="relative">
+            <img class="z-20" src="./images/model.png" alt="#">
+        </div>
+    </section>
 
 
 </body>
